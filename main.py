@@ -24,8 +24,5 @@ async def announce(ctx, *, pesan):
     else:
         await ctx.send("❌ Channel tidak ditemukan.")
 
-
-from keep_alive import keep_alive
-
-keep_alive()
+# Jalankan bot pakai TOKEN dari environment Railway
 bot.run(os.environ["TOKEN"])
